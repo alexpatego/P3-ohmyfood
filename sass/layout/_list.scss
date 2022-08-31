@@ -1,0 +1,54 @@
+@use "../utils/_variables.scss";
+@use "../utils/mixins" as *;
+
+/* List option */ 
+#fonctionnement {
+    counter-reset: steps;
+    margin-bottom: 2rem;
+
+    & .menu-select{
+       display: flex;
+       gap: 2rem;
+       margin: 0 2rem;
+       list-style: none;
+       @media (max-width: 1024px) {
+        flex-direction: column;
+       }
+    }
+
+    & li {
+        &::before {
+            content: counter(steps);
+            counter-increment: steps;
+            color: variables.$color-header;
+            background-color: variables.$primary-color;
+            width: 2 * variables.$size;
+            height: 2 * variables.$size;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 1.2rem;
+            left: -1 * variables.$size;
+        }
+        position: relative;
+        background-color: variables.$color-section;
+        padding: 1.5rem 2rem;
+        flex-grow: 1;
+        border-radius: 1rem;
+        font-weight: bold;
+        @include box-shadow_list;
+        &:hover {
+            @include zoom;
+            background-color: lighten($color: variables.$primary-color, $amount: 30%);
+            & i{
+                color: variables.$primary-color;
+            }
+        }
+
+        & i{
+            margin-right: 1rem;
+            color: variables.$list-icon;
+        }
+    }
+}

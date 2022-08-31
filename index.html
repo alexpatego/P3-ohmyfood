@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/aac76db6a7.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -25,7 +25,7 @@
 <main>
     <!--search_box-->
     <section class="search_box flex-center">
-        <i class="fa-solid fa-location-dot fa-1x"></i> 
+        <i class="fas fa-location-dot fa-1x"></i> 
         <input type="search" id="location" name="location" value="Paris, Belleville" placeholder="Votre ville" required>
     </section>
     <!--Partie explorer-->
@@ -37,60 +37,51 @@
     <!--Options-->
     <section id="fonctionnement">
         <h2>Fonctionnement</h2>
-        <div class="menu-select">
-            <i class="fa-solid fa-1"></i>
-            <i class="fa-solid fa-mobile-screen-button"></i>
-            <h3>Choisissez un restaurant</h3>
-        </div>
-        
-        <div class="menu-select">  
-            <i class="fa-solid fa-2"></i>
-            <i class="fa-solid fa-list"></i>
-            <h3>Composez votre menu</h3>
-        </div>
-        
-        <div class="menu-select">
-            <i class="fa-solid fa-3"></i>
-            <i class="fa-solid fa-store"></i>
-            <h3>Dégustez au restaurant</h3>    
-        </div> 
+        <ol class="menu-select">
+            <li><i class="fas fa-mobile-screen-button"></i>Choisissez un restaurant</li>
+            <li><i class="fas fa-list"></i>Composez votre menu</li>
+            <li><i class="fas fa-store"></i>Dégustez au restaurant</li>
+        </ol> 
     </section>
     <section id="restaurants">
         <h2>Restaurants</h2>
-        <div class="content">
-            <a href="#"><div class="imgbackground imgbackground__1"></div></a>
-            <div class="green-box">
-                <p>Nouveau</p>
-            </div>
-            <div class="infos">
-            <h3 class="content__title">La palette du goût</h3>
-            <p class="content__title--sub">Ménilmontant</p>
-            <i class="fa-regular fa-heart fa-2x"></i>
-            </div>
-        </div>
-        <div class="content">
-            <a href="#"><div class="imgbackground imgbackground__2"></div></a>
-            <div class="green-box">
-                <p>Nouveau</p>
-            </div>
-            <div class="infos">
-            <h3 class="content__title">La note enchantée</h3>
-            <p class="content__title--sub">Charonne</p>
-            <i class="fa-regular fa-heart fa-2x"></i>
-            </div>
-        </div>
-        <div class="content">
-            <a href="#"><div class="imgbackground imgbackground__3"></div></a>
-            <h3 class="content__title">À la française</h3>
-            <p class="content__title--sub">Cité Rouge</p>
-            <i class="fa-regular fa-heart fa-2x"></i>
-        </div>
-        <div class="content">
-            <a href="#"><div class="imgbackground imgbackground__4"></div></a>
-            <h3 class="content__title">Le délice des sens</h3>
-            <p class="content__title--sub">Folie-Méricourt</p>
-            <i class="far fa-heart fa-2x"></i>
-            <!--<i class="fas fa-heart fa-2x"></i>-->
+        <div class="menu_restos">
+            <a href="#" class="card new">
+                <div class="card_img card_img-1"></div>
+                <div class="card_infos">
+                <h3 class="infos__title">La palette du goût</h3>
+                <p class="infos__title--sub">Ménilmontant</p>
+                <i class="far fa-heart fa-2x"></i>
+                <i class="fas fa-heart fa-2x"></i>
+                </div>
+            </a>
+            <a href="#" class="card new">
+                <div class="card_img card_img-2"></div>
+                <div class="card_infos">
+                <h3 class="infos__title">La note enchantée</h3>
+                <p class="infos__title--sub">Charonne</p>
+                <i class="far fa-heart fa-2x"></i>
+                <i class="fas fa-heart fa-2x"></i>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="card_img card_img-3"></div>
+                <div class="card_infos">
+                <h3 class="infos__title">À la française</h3>
+                <p class="infos__title--sub">Cité Rouge</p>
+                <i class="far fa-heart fa-2x"></i>
+                <i class="fas fa-heart fa-2x"></i>
+                </div>
+            </a>
+            <a href="#"class="card">
+                <div class="card_img card_img-4"></div>
+                <div class="card_infos">
+                <h3 class="infos__title">Le délice des sens</h3>
+                <p class="infos__title--sub">Folie-Méricourt</p>
+                <i class="far fa-heart fa-2x"></i>
+                <i class="fas fa-heart fa-2x"></i>
+                </div>
+            </a>
         </div>
     </section>
 </main>

@@ -1,0 +1,19 @@
+@use "./sass/base/_base.scss";
+@use "./sass/layout/_header.scss";
+@use "./sass/utils/_variables.scss";
+@use "./sass/layout/_footer.scss";
+@use "./sass/layout/_search.scss";
+@use "./sass/base/_loader.scss";
+@use "./sass/layout/_list.scss";
+@use "./sass/layout/_explorer.scss";
+@use "./sass/layout/_restaurants.scss";
+@use "./sass/utils/mixins";
+
+// parent avec animation disappear (middle) (KF transform sclae(0)) puis after avec un content: "" animation d'un autre nom avec un animation en KF.
+
+//svg pour coeur (svg path) viewbox position struck declarer: couleur svg) 
+
+
+// hover cards fonctionnement, background and color icon.
+
+// branches pour les 4 restaurants

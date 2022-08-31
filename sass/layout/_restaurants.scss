@@ -1,0 +1,109 @@
+@use "../utils/_variables.scss";
+@use "../utils/mixins" as *;
+
+
+/* Affichage restaurant */
+
+#restaurants {
+    background: variables.$color-section;
+    
+    & .menu_restos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding-bottom: 3rem;
+    @media (max-width: 1024px){
+       grid-template-columns: repeat(1, 1fr);
+    }
+    .new {
+        position: relative;
+    }
+    .new::before {
+        content: "Nouveau";
+        position: absolute;
+        height: 2rem;
+        width: 5rem;
+        background-color: variables.$tertiary-color;
+        color: darken($color: variables.$tertiary-color, $amount: 35%);
+        display: grid;
+        place-items: center;
+        right: 1rem;
+        top: 1rem;
+        @include box-shadow;
+    }
+  }
+
+  & .card {
+    margin: 0 1rem;
+    @include box-shadow_resto;
+    border-radius: 1.5rem;
+    &_img {
+        height: 16rem;
+        border-radius: 1.5rem 1.5rem 0 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    @for $i from 1 through 4 {
+    &_img-#{$i} {
+        background-image: url(/images/restaurants/menu-#{$i}.jpg);
+            }
+        } 
+    &_infos{
+        position: relative;
+        border-radius: 0 0 1.5rem 1.5rem;
+        background: variables.$color-header;
+        & h3, p{
+            margin: 0 1rem;
+        }
+        & h3{
+            padding-top: 1rem;
+            padding-bottom: 0.5rem;
+        }
+        & p{
+            padding-bottom: 1rem;
+        }
+
+        & i{
+            position: absolute;
+            //display: grid;
+            //place-items: center;
+            right: 1rem;
+            top: 1.5rem;
+        }
+
+        & .fas{
+            color: transparent;
+            background-image: linear-gradient(variables.$primary-color,variables.$secondary-color );
+            background-clip: text;
+            -webkit-background-clip: text;
+            opacity: 0;
+            transition: all 200ms ease-in-out;
+            &:hover{
+                opacity: 1;
+                transform: scale(1.3);
+            }
+        }
+    }   
+
+    &:hover {
+        @include zoom;
+    }
+
+    &:hover .fas {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    }
+
+
+
+
+}
+
+
+
+
+
+
+

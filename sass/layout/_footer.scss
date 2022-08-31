@@ -1,0 +1,47 @@
+@use "../utils/_variables.scss";
+
+// footer
+
+#footer {
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    background: variables.$color-footer;
+    color: variables.$color-header;
+    padding: 1.5rem 1rem;
+    font-size: 1.2rem;
+
+    & h3 {
+        font-family: variables.$font-title;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    & ul{
+        list-style: none;
+        font-family: variables.$font-text;
+        margin-bottom: 1rem;
+
+        & a{
+            text-decoration: none;
+        }
+
+        & li{
+            margin-bottom: 0.5rem;
+            color: variables.$color-header;
+        }
+
+        & i{
+        height: 10px;
+        width: 10px;
+        margin-right: 1.5rem;
+        }
+        
+    }
+
+    & .ligns{
+        flex-direction: row;
+        display: flex;
+    }
+
+}
+

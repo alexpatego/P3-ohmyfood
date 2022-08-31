@@ -1,0 +1,18 @@
+/* box-shadow */
+
+@mixin box-shadow {
+    box-shadow: 2px 2px 10px #8c8c8c;
+}
+
+@mixin box-shadow_list {
+    box-shadow: 1px 1px 10px -2px #bababa;
+}
+@mixin box-shadow_resto {
+    box-shadow: 1px 1px 10px 2px #bababa;
+}
+
+/* zoom */
+
+@mixin zoom {
+    transform: scale(1.02);
+}
