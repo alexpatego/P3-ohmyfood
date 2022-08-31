@@ -26,6 +26,13 @@ h3, p {
   margin: 0;
 }
 
+
+#fonctionnement {
+  @media (min-width: 1024px) {
+    margin: 0 5rem;
+  }
+}
+
 body {
     background: #fff;
     color: #000;
