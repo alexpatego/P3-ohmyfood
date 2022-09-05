@@ -3,7 +3,7 @@
 /* Reservez le menu */
 
 .explorer {
-    height: 300px;
+    height:18rem;
     width: 100%;
     background: variables.$color-section;
     display: flex;
@@ -44,7 +44,7 @@
 
         &:hover {
             transform: scale(1.05);
-            background: lighten($color: variables.$primary-color, $amount: 5%);
+            background: lighten($color: variables.$primary-color, $amount: 10%);
             box-shadow: 2px 2px 10px rgb(23, 23, 23);
           }
     }

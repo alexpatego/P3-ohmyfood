@@ -6,8 +6,12 @@
 @use "./sass/base/_loader.scss";
 @use "./sass/layout/_list.scss";
 @use "./sass/layout/_explorer.scss";
-@use "./sass/layout/_restaurants.scss";
-@use "./sass/utils/mixins";
+@use "./sass/layout/_menu.scss";
+@use "./sass/utils/_mixins";
+@use "./sass/pages/_restaurants.scss";
+@use "./sass/base/progressive";
+@use "./sass/pages/pagegeneral";
+@use "./sass/components/buttons";
 
 // parent avec animation disappear (middle) (KF transform sclae(0)) puis after avec un content: "" animation d'un autre nom avec un animation en KF.
 
