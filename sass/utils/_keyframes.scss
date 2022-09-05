@@ -33,3 +33,19 @@
         }
     }  
 }
+
+/* loader restaurants */
+
+@mixin fade-in {
+    @keyframes fade-in {
+        0% {
+            transform: translateY(10%);
+            opacity: 0;
+        }
+        100% {
+            transform: translate(0);
+            opacity: 1;
+        }
+    }
+}
+

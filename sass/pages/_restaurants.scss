@@ -4,16 +4,20 @@
 
 /* List menu restaurants */
 
+
 .carte{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1.5rem;
         margin: 1rem 1rem;
+        
         @media screen and (max-width: 1024px) {
             grid-template-columns: repeat(1, 1fr);
         }
             & .menu__list{
                 overflow: hidden;
+                @include anim.fade-in;
+                animation: fade-in 1200ms 300ms both ease-in-out;
                 & h3{
                 text-transform: uppercase;
                 font-weight: 400;
@@ -31,6 +35,7 @@
                     margin: 1rem 0.5rem;
                     display: flex;
                     overflow: hidden;
+                    
                     background-color: variables.$color-header;
                     @include box-shadow_resto;
     

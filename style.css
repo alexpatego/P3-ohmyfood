@@ -124,6 +124,7 @@ header h1 {
 /* Keyframes */
 /* check page restaurants */
 /* loader acceuil */
+/* loader restaurants */
 /* loader */
 .loader {
   background-color: #FFFFFF;
@@ -394,6 +395,17 @@ header h1 {
 }
 .carte .menu__list {
   overflow: hidden;
+  animation: fade-in 1200ms 300ms both ease-in-out;
+}
+@keyframes fade-in {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
 }
 .carte .menu__list h3 {
   text-transform: uppercase;
