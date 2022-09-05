@@ -62,9 +62,7 @@
                         display: grid;
                         place-items: center;
                         color: variables.$color-header;
-                        transition: margin-right 300ms;
-                        
-                        
+                        transition: margin-right 300ms;     
                     }
                     &:hover {
                         cursor: pointer;
