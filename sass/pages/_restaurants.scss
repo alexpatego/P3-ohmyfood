@@ -34,8 +34,7 @@
                     border-radius: 1rem;
                     margin: 1rem 0.5rem;
                     display: flex;
-                    overflow: hidden;
-                    
+                    overflow: hidden;   
                     background-color: variables.$color-header;
                     @include box-shadow_resto;
     
