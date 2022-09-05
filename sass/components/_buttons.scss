@@ -1,0 +1,45 @@
+@use "../utils/mixins" as *;
+@use "../utils/variables";
+
+/* explorer btn */
+
+.explorer__btn {
+  @include btn;
+  font-size: 1.2rem;
+  padding: 1.5rem 2rem;
+  color: variables.$color-header;
+  background: variables.$gradient-btn;
+  @include box-shadow;
+  border-radius: 2.5rem;
+  margin-top: 2.5rem;
+
+  &:hover {
+      @include zoom;
+      background: lighten($color: variables.$primary-color, $amount: 10%);
+      @include box-shadow_btn;
+    }
+}
+
+/* Pages restaurants btn*/
+
+.commande_btn {
+    display: grid;
+    place-items: center;
+    width: 14rem;
+    margin: 1rem auto 3rem auto;
+    @include btn;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    color: variables.$color-header;
+    background: variables.$gradient-btn;
+    @include box-shadow;
+    border-radius: 2rem;
+    transition: transform 300ms;
+
+    &:hover {
+        @include zoom;
+        background: variables.$ligthen-btn;
+        @include box-shadow_btn;
+      }
+}
+

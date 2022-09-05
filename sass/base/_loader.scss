@@ -1,8 +1,8 @@
 @use "../utils/_variables.scss" as *;
+@use "../utils/keyframes" as anim;
 
 /* loader */
 .loader {
-    height: 100%;
     background-color: $color-header;
     display: grid;
     place-items: center;
@@ -11,17 +11,19 @@
     z-index: 999999;
     opacity: 0.9;
     animation: fade-away 100ms $animation-duration * $animation-count forwards;
+    @include anim.fade-away;
     transform-origin: top;
     &::after{
         content:"";
-        height: 120px;
-        width: 120px;
-        border-top: 5px solid $primary-color;
-        border-left: 5px solid $secondary-color;
-        border-right: 5px solid $tertiary-color;
+        height: 15 * $size;
+        width: 15 * $size;
+        border-top: 0.5rem solid $primary-color;
+        border-left: 0.5rem solid $secondary-color;
+        border-right: 0.5rem solid $tertiary-color;
         //border-bottom: 5px solid transparent;
         border-radius: 50%;
         animation: spin $animation-duration ease-in-out;
+        @include anim.spin;
         background-image: url('./images/logo/ohmyfood.png');
         background-size: 80%;
         background-repeat: no-repeat;
@@ -30,17 +32,3 @@
     }
 }
 
-@keyframes fade-away {
-    from{
-        transform:scale(1);
-    }
-    to{
-        transform: scale(0);
-    }
-}
-
-@keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
-}

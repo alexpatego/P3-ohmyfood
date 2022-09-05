@@ -1,0 +1,35 @@
+@use "./variables";
+
+/* Keyframes */
+
+/* check page restaurants */
+@mixin checkspin {
+    @keyframes checkspin{
+        from{
+            rotate: -360deg;
+        }
+        to{
+            rotate: 0;
+        }
+    }
+}
+
+/* loader acceuil */
+@mixin fade-away {
+    @keyframes fade-away {
+        from{
+            transform:scale(1);
+        }
+        to{
+            transform: scale(0);
+        }
+    }
+}
+
+@mixin spin {
+    @keyframes spin {
+        to {
+        transform: rotate(360deg);
+        }
+    }  
+}

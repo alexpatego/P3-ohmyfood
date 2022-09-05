@@ -1,0 +1,32 @@
+@use "../utils/mixins" as *;
+@use "../utils/variables";
+
+/* Title pages restaurants */
+#menu-deroulant{
+        border-radius: 2rem 2rem 0 0;
+        background-color: variables.$color-section;
+        top: -2rem;
+        position: relative;
+        animation: appear 1s ;
+        
+        & h2{
+            font-family: variables.$font-title;
+            font-size: 2rem;
+            margin-left: 1.5rem;
+            &::before{
+                @include heart-fa1;
+                right: 1.5rem;
+                top: 2rem;
+            }
+            &::after{
+                @include heart-fa1;
+                @include heart-fa2;
+                right: 1.5rem;
+                top: 2rem;
+            }
+            &:hover:after{
+                opacity: 1;
+                transform: scale(1.3);
+            }
+        }
+    }

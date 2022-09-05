@@ -18,3 +18,6 @@ $animation-duration: 1s;
 $animation-count: 3; 
 
 $size: 1rem;
+
+$ligthen-btn: lighten($color: $primary-color, $amount: 10%);
+$gradient-btn: linear-gradient(10deg, $primary-color 0%, $secondary-color);

@@ -9,9 +9,11 @@
 @use "./sass/layout/_menu.scss";
 @use "./sass/utils/_mixins";
 @use "./sass/pages/_restaurants.scss";
-@use "./sass/base/progressive";
-@use "./sass/pages/pagegeneral";
-@use "./sass/components/buttons";
+@use "./sass/base/_progressive";
+@use "./sass/pages/_pagegeneral";
+@use "./sass/components/_buttons";
+@use "./sass/utils/_keyframes";
+@use "./sass/pages/_title";
 
 // parent avec animation disappear (middle) (KF transform sclae(0)) puis after avec un content: "" animation d'un autre nom avec un animation en KF.
 

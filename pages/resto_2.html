@@ -12,9 +12,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/aac76db6a7.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body id="id_resto">
     <a href="./../index.html">
+    <!--header et nav-->
     <header>
             <h1>ohmyfood</h1>
     </header>
@@ -22,84 +27,134 @@
     <div>
         <img class="imgbanner" src="./../images/restaurants/menu-2.jpg">
     </div>
+    <!--Menu et titre-->
     <section id="menu-deroulant">
         <h2>La note enchantée</h2>
         <div class="carte">
-            <div class="entrees">
+            <!--Liste menu grid-->
+            <div class="menu__list">
+            <div class="menu__title">
             <h3>Entrées</h3>
             <div class="green-lign"></div>
+            </div>
                 <div class="card-resto">
+                <div class="card-resto__description">
                 <h4>Ravioles de foie gras</h4>
                 <p>Accompagnés de leur crème à la truffe</p>
+                </div>
                 <span class="card-resto__price">25€</span>
-                <div class="card-resto__check"></div>
+                <div class="card-resto__check">
+                <i class="fas fa-check-circle fa-2x"></i>
+                </div>
                 </div>
                 <div class="card-resto">
+                <div class="card-resto__description">
                 <h4>Caviar osciètre</h4>
                 <p>Sur blini à la farine de blé noir</p>
+                </div>
                 <span class="card-resto__price">35€</span>
-                <div class="card-resto__check"></div>
+                <div class="card-resto__check">
+                    <i class="fas fa-check-circle fa-2x"></i>
+                </div>
                 </div>
                 <div class="card-resto">
+                <div class="card-resto__description">
                 <h4>Homard et espuma de potiron</h4>
                 <p>Mariné aux zestes d'orange</p>
+                </div>
                 <span class="card-resto__price">20€</span>
-                <div class="card-resto__check"></div>
+                <div class="card-resto__check">
+                    <i class="fas fa-check-circle fa-2x"></i>
+                </div>
                 </div>
                 <div class="card-resto">
+                <div class="card-resto__description">
                 <h4>Foie gras de canard cuit entier</h4>
                 <p>Confiture de figue et pain toasté</p>
+                </div>
                 <span class="card-resto__price">35€</span>
-                <div class="card-resto__check"></div>
+                <div class="card-resto__check">
+                <i class="fas fa-check-circle fa-2x"></i>
+                </div>
                 </div>
             </div>
-            <div class="plats">
+            <div class="menu__list">
+            <div class="menu__title">
             <h3>Plats</h3>
             <div class="green-lign"></div>
+            </div>
                 <div class="card-resto">
+                <div class="card-resto__description">
                 <h4>Noix de coquilles Saint-Jacques</h4>
                 <p>Sur lit de purée de céleri-rave</p>
+                </div>
                 <span class="card-resto__price">40€</span>
-                <div class="card-resto__check"></div>
+                <div class="card-resto__check">
+                    <i class="fas fa-check-circle fa-2x"></i>
+                </div>
                 </div>
                 <div class="card-resto">
+                <div class="card-resto__description">
                 <h4>Langoustine poêlée</h4>
                 <p>Purée de patate douce</p>
+                </div>
                 <span class="card-resto__price">35€</span>
-                <div class="card-resto__check"></div>
+                <div class="card-resto__check">
+                    <i class="fas fa-check-circle fa-2x"></i>
+                </div>
                 </div>
                 <div class="card-resto">
+                <div class="card-resto__description">
                 <h4>Mijoté de queue de boeuf</h4>
                 <p>Et riz sauvage aux zestes de citron</p>
+                </div>
                 <span class="card-resto__price">44€</span>
-                <div class="card-resto__check"></div>
+                <div class="card-resto__check">
+                    <i class="fas fa-check-circle fa-2x"></i>
+                </div>
                 </div>
             </div>
-            <div class="desserts">
+            <div class="menu__list">
+            <div class="menu__title">
             <h3>Desserts</h3>
             <div class="green-lign"></div>
+            </div>
                 <div class="card-resto">
+                <div class="card-resto__description">
                 <h4>Macaron noisette et chocolat</h4>
                 <p>Glace au caramel brun et sel de Guérande</p>
+                </div>
                 <span class="card-resto__price">18€</span>
-                <div class="card-resto__check"></div>
+                <div class="card-resto__check">
+                    <i class="fas fa-check-circle fa-2x"></i>
+                </div>
                 </div>
                 <div class="card-resto">
+                    <div class="card-resto__description">
                 <h4>Baba au rhum revisité</h4>
                 <p>Avec son coulis de citron</p>
+                </div>
                 <span class="card-resto__price">22€</span>
-                <div class="card-resto__check"></div>
+                <div class="card-resto__check">
+                    <i class="fas fa-check-circle fa-2x"></i>
+                </div>
                 </div>
                 <div class="card-resto">
+                <div class="card-resto__description">
                 <h4>Tarte au citron meringuée</h4>
                 <p>Déstructurée</p>
+                </div>
                 <span class="card-resto__price">23€</span>
-                <div class="card-resto__check"></div>
+                <div class="card-resto__check">
+                    <i class="fas fa-check-circle fa-2x"></i>
+                </div>
                 </div>
             </div>
         </div>
     </section>
+    <!--btn commande-->
     <a href="#" class="commande_btn">Commander</a>
+    <!--footer-->
     <footer id="footer">
         <h3>ohmyfood</h3>
         <ul class="options">
