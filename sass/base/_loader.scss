@@ -1,11 +1,9 @@
 @use "../utils/_variables.scss" as *;
-@use "../utils/keyframes" as anim;
+@use "../utils/_keyframes.scss" as anim;
 
 /* loader */
 .loader {
     background-color: $color-header;
-    display: grid;
-    place-items: center;
     position: fixed; 
     inset: 0;
     z-index: 999999;

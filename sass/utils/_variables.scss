@@ -1,4 +1,6 @@
-//variables
+/*variables*/
+
+/*Couleurs*/
 
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
@@ -11,13 +13,17 @@ $color-section: #F6F6F6;
 
 $list-icon: #626262;
 
+/*Typography*/
 $font-text: 'Roboto', sans-serif;
 $font-title: 'Shrikhand', cursive;
 
+
+/*Animation*/
 $animation-duration: 1s;
 $animation-count: 3; 
 
 $size: 1rem;
 
+/*Btns*/
 $ligthen-btn: lighten($color: $primary-color, $amount: 10%);
 $gradient-btn: linear-gradient(10deg, $primary-color 0%, $secondary-color);

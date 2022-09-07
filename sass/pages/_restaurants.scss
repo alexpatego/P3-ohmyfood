@@ -1,9 +1,8 @@
-@use "../utils/mixins" as *;
-@use "../utils/variables";
-@use "../utils/keyframes" as anim;
+@use "../utils/_mixins.scss" as *;
+@use "../utils/_variables.scss";
+@use "../utils/_keyframes.scss" as anim;
 
 /* List menu restaurants */
-
 
 .carte{
         display: grid;
@@ -57,8 +56,6 @@
                         margin-right: -3rem;
                         width: 3rem;
                         background-color: variables.$tertiary-color;
-                        display: grid;
-                        place-items: center;
                         color: variables.$color-header;
                         transition: margin-right 300ms;     
                     }

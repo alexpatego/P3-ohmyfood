@@ -1,5 +1,5 @@
-@use "../utils/mixins" as *;
-@use "../utils/variables";
+@use "../utils/_mixins.scss" as *;
+@use "../utils/_variables.scss";
 
 /* Title pages restaurants */
 #menu-deroulant{
@@ -7,8 +7,7 @@
         background-color: variables.$color-section;
         top: -2rem;
         position: relative;
-        animation: appear 1s ;
-        
+        animation: appear 1s;   
         & h2{
             font-family: variables.$font-title;
             font-size: 2rem;

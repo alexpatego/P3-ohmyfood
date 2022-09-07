@@ -1,4 +1,4 @@
-@use "./variables";
+@use "./_variables.scss";
 
 /* box-shadow */
 
@@ -14,7 +14,9 @@
 @mixin box-shadow_btn {
     box-shadow: 2px 2px 10px rgb(23, 23, 23);
 }
-
+@mixin box-shadow_header {
+    box-shadow: 0 3px 8px #c6c3c3;
+}
 /* zoom */
 
 @mixin zoom {

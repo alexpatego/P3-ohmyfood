@@ -1,6 +1,7 @@
-@use "../utils/mixins" as *;
-@use "../utils/variables";
+@use "../utils/_mixins.scss" as *;
+@use "../utils/_variables.scss";
 
+/* Pages restaurants */
 
 #id_resto {
     background: variables.$color-section;
@@ -11,7 +12,7 @@
     content: "\f060";
     position: absolute;
     left: 1.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     top: 1.8rem;
     cursor: pointer;
     }

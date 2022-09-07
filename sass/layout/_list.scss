@@ -1,5 +1,5 @@
 @use "../utils/_variables.scss";
-@use "../utils/mixins" as *;
+@use "../utils/_mixins.scss" as *;
 
 /* List option */ 
 #fonctionnement {
@@ -49,7 +49,6 @@
                 color: variables.$primary-color;
             }
         }
-
         & i{
             margin-right: 1rem;
             color: variables.$list-icon;

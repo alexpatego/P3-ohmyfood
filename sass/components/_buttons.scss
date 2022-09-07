@@ -23,8 +23,6 @@
 /* Pages restaurants btn*/
 
 .commande_btn {
-    display: grid;
-    place-items: center;
     width: 14rem;
     margin: 1rem auto 3rem auto;
     @include btn;

@@ -5,32 +5,29 @@
     background: variables.$color-search;
  
     & input{
-        width: 190px;
+        width: 12rem;
         height: 100%;
         background: variables.$color-search;
-        padding: 18px 10px;
-        font-size: 20px;
+        padding: 1rem 0.5rem;
+        font-size: 1.2rem;
         border: 0;
         font-weight: 700;
         text-align: center;
-        margin-left: 5px;
-        margin-top: 5px;
+        margin-left: 0.5rem;
+        margin-top: auto;
 
-    &::placeholder {
-        color: #626262;
-    }
+        &::placeholder {
+            color: variables.$list-icon;
+        }
 
-    &:active{
-        border: 0;
-        background: variables.$color-search;
+        &:active{
+            background: variables.$color-search;
+        }
     }
-    }
-
-    //input active border
 }
 
 .fa-location-dot {
-    color: #626262;
-    margin-left: 30px;
+    color: variables.$list-icon;
+    margin-left: 2rem;
 }
 
