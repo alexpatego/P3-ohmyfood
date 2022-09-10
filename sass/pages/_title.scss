@@ -10,7 +10,10 @@
         animation: appear 1s;   
         & h2{
             font-family: variables.$font-title;
-            font-size: 1.5rem;
+            font-size: 2rem;
+            @media screen and (max-width: 1024px) {
+                font-size: 1.5rem;
+            }
             margin-left: 1.5rem;
             &::before{
                 @include heart-fa1;
