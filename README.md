@@ -1,8 +1,8 @@
-Ohmyfood
+#Ohmyfood
 
 Third project of the Web Developper class from OpenClassroom.
 
-There were 4 classes linked to the project: 
+#There were 4 classes linked to the project: 
 
 - https://openclassrooms.com/en/courses/6106181-simplifiez-vous-le-css-avec-sass
 - https://openclassrooms.com/en/courses/5919246-creez-des-animations-css-modernes
@@ -15,4 +15,13 @@ It was also my first project using Git and Github as a tool to follow my project
 
 Overall the goal of the project was to learn how to create a Front-End environnement and make it work only using CSS and SCSS and not using JS. 
 
-Technologies used: HTML, CSS, SCSS, Git, PostCSS, Autoprefixer and CSSNano.
+#Technologies used: 
+  - HTML 
+  - CSS 
+  - SCSS 
+  - Git 
+  
+#Packages:
+  - PostCSS 
+  - Autoprefixer 
+  - CSSNano
